@@ -120,7 +120,7 @@ header {
     .sobre-container{
         flex-wrap: wrap;
         justify-content: center;
-        padding: 0px 15px;
+        padding: 80px 10px;
     }
     
     .sobre h1{
