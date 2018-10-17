@@ -121,13 +121,11 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         padding: 80px 10px;
-        flex-direction: column;
-        
+        flex-direction: column;        
     }
     
     .sobre img {
-    border-radius: 50%;
-    max-width:35%;
+    max-width:45%;
     align-self: center;
 }
     
@@ -140,7 +138,7 @@ header {
     } 
     
       .sobre-texto > p:last-child{
-        text-align: left;
+        text-align:inherit;
         padding: 0px 15px  
     } 
     
@@ -182,7 +180,7 @@ header {
 }
 
 .skill-item img {
-    width: 90px;
+    max-width: 45%;
 }
 
 .skill-item h3 {
@@ -195,7 +193,7 @@ header {
     }
     
     .skill-item img{
-        width: 150px;
+        max-width: 60%;
         margin-bottom: 50px;
     }
     
