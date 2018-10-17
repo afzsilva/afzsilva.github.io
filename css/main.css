@@ -138,6 +138,7 @@ header {
     
     .sobre{
         padding: 80px 10px;
+        flex-wrap: wrap;
     }
     
 }
