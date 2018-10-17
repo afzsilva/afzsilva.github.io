@@ -116,10 +116,11 @@ header {
     max-width:100%;
 }
 
-@media(max-width:960px){
+@media(max-width:920px){
     .sobre-container{
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0px 15px;
     }
     
     .sobre h1{
