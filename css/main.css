@@ -312,15 +312,22 @@ header {
 
 .contato-item-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 50px auto 0px auto;
 
 
 }
 
 .contato-item {
-    padding: 5px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 100px;
     text-align: center;
+}
+
+.contato-item img{
+    margin-bottom: 15px;
 }
 
 .contato-item p {
@@ -330,13 +337,18 @@ header {
 .contato-item a {
     text-decoration: none;
     color: #000;
-    padding: 0px
+    display: inline-block;
+    padding: 10px;
+    
 }
 
 .contato-item a:hover {
     color: #f2b50e;
+    background: #222;
+    border-radius: 5px;
+    transition: 0.2s;
 }
-@media(max-width:660px){
+@media(max-width:959px){
     
     .contato-item-container{
         flex-direction: column;
@@ -345,6 +357,8 @@ header {
     
     .contato-item img{
         padding-bottom: 20px;
+        max-width: 70%;
+        align-self: center;
         
     }
     
@@ -354,6 +368,12 @@ header {
          padding: 10px
         
     }
+    
+    .contato-section{
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    
     
 }
 
