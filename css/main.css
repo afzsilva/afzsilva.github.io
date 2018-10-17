@@ -113,9 +113,10 @@ header {
 
 .sobre img {
     border-radius: 50%;
+    max-width:100%;
 }
 
-@media(max-width:799px){
+@media(max-width:900px){
     .sobre-container{
         flex-wrap: wrap;
         justify-content: center;
