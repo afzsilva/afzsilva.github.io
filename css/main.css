@@ -62,7 +62,7 @@ header {
     padding: 50px 30px;
 }
 
-@media(max-width:700px) {
+@media(max-width:750px) {
     .header-flex {
         flex-direction: column;
     }
@@ -131,6 +131,7 @@ header {
     
       .sobre-texto > p:last-child{
         text-align: left;
+        padding: 0px 15px  
     } 
     
     .sobre{
@@ -207,7 +208,7 @@ header {
     
 }
 
-@media(max-width:800px){
+@media(max-width:900px){
     .skill-container{
         flex-wrap:wrap;
     }
@@ -236,16 +237,47 @@ header {
 
 .portifolio-container {
     display: flex;
+    flex-direction: column;    
+    
 }
 
 .portifolio-item {
-    padding: 0px 10px 15px 10px;
+    padding: 0px 30px 45px 30px;
+    display: flex;    
+    
+}
 
+.portifolio-item-desc{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.portifolio-item img{
+    max-width: 100%;
+}
+
+@media(max-width:800px){
+    .portifolio-item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center:
+    }
+   
+    .portifolio-item img{
+        max-width: 100%;
+        align-self: center;
+    }
+    
+    .portifolio-item-desc{
+        padding-top: 25px;
+        max-width: 95%;
+        align-self: center;
+    }
 }
 
 
-
-/*CONTATO*/
+/*CONTATO__________________________*/
 .contato-section {
     padding: 0px 10px 120px 10px;
     background: #EDEDED;
