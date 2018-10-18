@@ -9,7 +9,6 @@ ul {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
 }
 
 
@@ -44,7 +43,7 @@ header {
 
 
 
-/*MENU*/
+/*MENU____________________________________*/
 .menu-flex {
     display: flex;
 }
@@ -52,10 +51,13 @@ header {
 .menu-flex li a {
     text-decoration: none;
     color: #f1f1f1;
+/*    padding: 50px 30px;*/
+    padding: 10px;
 }
 
 .menu-flex li a:hover {
     border-bottom: 2px solid #f2b50e;
+/*    background:#f2b50e; */
 }
 
 .menu-flex li {
@@ -63,46 +65,57 @@ header {
     padding: 50px 30px;
 
 }
-
+/*menu-mobile*/
 @media(max-width:750px) {
-    .header-flex {
-/*        flex-direction: column;*/
-    }
 
     .menu-flex {
         flex-direction: column;
         align-items: center;
+        padding-top: 30px;
+
     }
 
     .menu-flex li {
         width: 100%;
+       padding-bottom: 10px;
     }
-
+    
+    .menu-flex li:last-child{
+        padding-bottom: 25px;
+    }
     .menu-flex li a {
-        display:inline-block;
-        padding: 5px 0px;        
+        display: inline-block;
+        text-align: center;
         width: 100%;
-        
     }
-
-    .m{
+    
+    
+    
+    .menu-mob {
         width: 100%;
         max-height: 0;
-        overflow: hidden; 
-        margin-bottom: 50px;
+        overflow: hidden;
     }
 
     header {
         position: relative;
     }
 
-    .hb-btn {
+    .btn-mob {
         position: absolute;
         width: 58px;
         top: 15px;
         right: 10px;
         cursor: pointer;
     }
+
+    .btn-mob div {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+    }
+
 
     .mlogo {
         width: 100px;
@@ -111,24 +124,19 @@ header {
         margin-left: 20px;
         align-self: flex-start;
     }
-    
-    
+
+
 }
 
-.n{
-    max-height:30rem ;
-    padding-top: 30px;
-}
-/*Escnode  botão grande*/
-@media(min-width:751px) {
-    .hb-btn {
-        display: none;
-    }
+/*mobile-esconder___________*/
+.menu-mob-hide {
+    max-height: 30rem;
+/*    padding-top: 30px;*/
 }
 
 
 
-/*SOBRE*/
+/*SOBRE______________________________________*/
 .sobre {
     padding: 220px 10px;
     display: flex;
@@ -192,7 +200,7 @@ header {
 
 }
 
-/*HABILIDADES skills*/
+/*HABILIDADES skills_________________________*/
 .skills {
     padding: 80px 5px;
     background: #EDEDED;
@@ -232,7 +240,7 @@ header {
 }
 
 @media(max-width:600px) {
-    
+
     .skill-item {
         width: 190px;
     }
@@ -277,7 +285,7 @@ header {
     }
 }
 
-/*PORTIFOLIO*/
+/*PORTIFOLIO_________________________________*/
 .portifolio {
     background: #f0f0;
     padding: 30px 0px;
@@ -427,7 +435,7 @@ header {
 
 
 
-/*RODAPE*/
+/*RODAPE________________________________*/
 footer {
     background: #000;
 }
