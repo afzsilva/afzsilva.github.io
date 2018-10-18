@@ -51,13 +51,11 @@ header {
 .menu-flex li a {
     text-decoration: none;
     color: #f1f1f1;
-/*    padding: 50px 30px;*/
     padding: 10px;
 }
 
 .menu-flex li a:hover {
     border-bottom: 2px solid #f2b50e;
-/*    background:#f2b50e; */
 }
 
 .menu-flex li {
@@ -65,6 +63,7 @@ header {
     padding: 50px 30px;
 
 }
+
 /*menu-mobile*/
 @media(max-width:750px) {
 
@@ -77,20 +76,19 @@ header {
 
     .menu-flex li {
         width: 100%;
-       padding-bottom: 10px;
+        padding-bottom: 10px;
     }
-    
-    .menu-flex li:last-child{
+
+    .menu-flex li:last-child {
         padding-bottom: 25px;
     }
+
     .menu-flex li a {
         display: inline-block;
         text-align: center;
         width: 100%;
     }
-    
-    
-    
+
     .menu-mob {
         width: 100%;
         max-height: 0;
@@ -99,6 +97,10 @@ header {
 
     header {
         position: relative;
+    }
+    
+    .header-flex img{
+        max-width: 25%;
     }
 
     .btn-mob {
@@ -128,10 +130,12 @@ header {
 
 }
 
+
+
 /*mobile-esconder___________*/
 .menu-mob-hide {
     max-height: 30rem;
-/*    padding-top: 30px;*/
+    /*    padding-top: 30px;*/
 }
 
 
@@ -177,7 +181,7 @@ header {
     }
 
     .sobre img {
-        max-width: 50%;
+        max-width: 60%;
         align-self: center;
     }
 
@@ -199,6 +203,8 @@ header {
     }
 
 }
+
+
 
 /*HABILIDADES skills_________________________*/
 .skills {
@@ -284,6 +290,8 @@ header {
         margin-bottom: 25px;
     }
 }
+
+
 
 /*PORTIFOLIO_________________________________*/
 .portifolio {
