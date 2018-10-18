@@ -25,6 +25,7 @@ main {
 header {
     background: #222222;
     border-bottom: 4px solid #f2b50e;
+    position: relative;
 }
 
 .container {
@@ -34,7 +35,7 @@ header {
 }
 
 .header-flex {
-        padding: 0 20px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     font-size: 1.125em;
@@ -60,11 +61,12 @@ header {
 .menu-flex li {
     list-style: none;
     padding: 50px 30px;
+
 }
 
 @media(max-width:750px) {
     .header-flex {
-        flex-direction: column;
+/*        flex-direction: column;*/
     }
 
     .menu-flex {
@@ -72,13 +74,55 @@ header {
         align-items: center;
     }
 
+    .menu-flex li {
+        width: 100%;
+    }
+
+    .menu-flex li a {
+        display:inline-block;
+        padding: 5px 0px;        
+        width: 100%;
+        
+    }
+
+    .m{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden; 
+        margin-bottom: 50px;
+    }
+
     header {
         position: relative;
     }
 
-    .header-flex img {
+    .hb-btn {
+        position: absolute;
+        width: 58px;
+        top: 15px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .mlogo {
         width: 100px;
         padding-top: 20px;
+        padding-bottom: 10px;
+        margin-left: 20px;
+        align-self: flex-start;
+    }
+    
+    
+}
+
+.n{
+    max-height:30rem ;
+    padding-top: 30px;
+}
+/*Escnode  botão grande*/
+@media(min-width:751px) {
+    .hb-btn {
+        display: none;
     }
 }
 
@@ -90,17 +134,15 @@ header {
     display: flex;
     background: url(../imagems/bgcode1.jpg) center center no-repeat;
     background-size: cover;
-    
-    
 }
 
-.sobre-container{
+.sobre-container {
     display: flex;
     justify-content: space-between;
     max-width: 960px;
     margin: 0 auto;
-    
 }
+
 .sobre h1 {
     font-size: 2.5em;
     font-weight: 500;
@@ -116,39 +158,38 @@ header {
 .sobre img {
     border-radius: 50%;
     max-width: 100%;
-
 }
 
-@media(max-width:1024px){
-    .sobre-container{
+@media(max-width:1024px) {
+    .sobre-container {
         flex-wrap: wrap;
         justify-content: center;
         padding: 80px 10px;
-        flex-direction: column;        
+        flex-direction: column;
     }
-    
+
     .sobre img {
-    max-width:50%;
-    align-self: center;
-}
-    
-    .sobre h1{
+        max-width: 50%;
+        align-self: center;
+    }
+
+    .sobre h1 {
         text-align: center;
     }
-    
-    .sobre-texto > p{
+
+    .sobre-texto > p {
         text-align: center;
-    } 
-    
-      .sobre-texto > p:last-child{
-        text-align:inherit;
-        padding: 0px 15px  
-    } 
-    
-    .sobre{
+    }
+
+    .sobre-texto > p:last-child {
+        text-align: inherit;
+        padding: 0px 15px
+    }
+
+    .sobre {
         padding: 0px 10px;
     }
-    
+
 }
 
 /*HABILIDADES skills*/
@@ -190,47 +231,48 @@ header {
     margin-bottom: 25px;
 }
 
-@media(max-width:600px){
-    .skill-item{
+@media(max-width:600px) {
+    
+    .skill-item {
         width: 190px;
     }
-    
-    .skill-item img{
+
+    .skill-item img {
         max-width: 60%;
         margin-bottom: 50px;
     }
-    
-    .skill-container{
+
+    .skill-container {
         flex-direction: column;
         justify-content: center;
         margin-bottom: -25px;
     }
-    
-        .skill-container-bottom{
+
+    .skill-container-bottom {
         flex-direction: column;
         justify-content: center;
     }
-    
-    .skills{
+
+    .skills {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
-    
-    
+
+
+
 }
 
-@media(max-width:900px){
-    .skill-container{
-        flex-wrap:wrap;
+@media(max-width:900px) {
+    .skill-container {
+        flex-wrap: wrap;
     }
-    
-    .skill-container-bottom{
-        flex-wrap:wrap;
+
+    .skill-container-bottom {
+        flex-wrap: wrap;
     }
-    
-    .skill-item{
+
+    .skill-item {
         margin-bottom: 25px;
     }
 }
@@ -250,39 +292,39 @@ header {
 
 .portifolio-container {
     display: flex;
-    flex-direction: column;    
-    
+    flex-direction: column;
+
 }
 
 .portifolio-item {
     padding: 0px 30px 45px 30px;
-    display: flex;    
-    
+    display: flex;
+
 }
 
-.portifolio-item-desc{
+.portifolio-item-desc {
     padding-left: 20px;
     padding-top: 5px;
 }
 
-.portifolio-item img{
+.portifolio-item img {
     max-width: 100%;
 }
 
-@media(max-width:800px){
-    .portifolio-item{
+@media(max-width:800px) {
+    .portifolio-item {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center:
     }
-   
-    .portifolio-item img{
+
+    .portifolio-item img {
         max-width: 100%;
         align-self: center;
     }
-    
-    .portifolio-item-desc{
+
+    .portifolio-item-desc {
         padding-top: 25px;
         max-width: 95%;
         align-self: center;
@@ -329,7 +371,7 @@ header {
     text-align: center;
 }
 
-.contato-item img{
+.contato-item img {
     margin-bottom: 15px;
 }
 
@@ -343,7 +385,7 @@ header {
     display: inline-block;
     padding: 10px;
     width: 200px;
-    
+
 }
 
 .contato-item a:hover {
@@ -352,35 +394,35 @@ header {
     border-radius: 5px;
     transition: 0.2s;
 }
-@media(max-width:959px){
-    
-    .contato-item-container{
+
+@media(max-width:959px) {
+
+    .contato-item-container {
         flex-direction: column;
         align-items: center;
         margin: 0px 20px;
-        
+
     }
-    
-    .contato-item img{
+
+    .contato-item img {
         padding-bottom: 20px;
         max-width: 70%;
         align-self: center;
-        
+
     }
-    
-     .contato-item a{
+
+    .contato-item a {
         margin-bottom: 10px;
-         display: block;
-         padding: 10px
-        
+        display: block;
+        padding: 10px
     }
-    
-    .contato-section{
+
+    .contato-section {
         padding-top: 20px;
         padding-bottom: 60px;
     }
-    
-    
+
+
 }
 
 
