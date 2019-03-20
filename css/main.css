@@ -317,12 +317,15 @@ header {
 .portifolio-item {
     padding: 0px 30px 45px 30px;
     display: flex;
-
+}
+.portifolio-item a{
+    text-decoration: none;
 }
 
 .portifolio-item-desc {
     padding-left: 20px;
     padding-top: 5px;
+    line-height: 25px;
 }
 
 .portifolio-item img {
