@@ -13,7 +13,7 @@ ul {
 
 
 body {
-    font-family: 'Lato', sans-serif;
+     font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -388,7 +388,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 15px 100px;
+    padding: 15px 50px;
     text-align: center;
 }
 
