@@ -291,6 +291,12 @@ img {
 	box-shadow: var(--shadow);
 }
 
+
+.cont-img{
+
+	
+}
+
 .card img {
 	flex-grow: 2;
 }
