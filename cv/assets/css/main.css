@@ -1,0 +1,237 @@
+/* Font */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+/* Reset */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;    
+}
+
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    /* grid properties*/
+    display: grid;    
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+}
+
+.container .left{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+    color: #fff;/*Temp*/
+}
+
+.container .right{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+/* Profile properties */
+.profile-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-text .imgbox{
+    
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-text .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-text h2{
+    color: #fff;
+    font-size: 1.5 rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.profile-text span{
+    margin-top: 5px;
+    font-size: 0.9em;
+    
+}
+
+.gerar-pdf{
+    /* display: none; */
+    position: absolute;
+    top: 1.1rem;
+    left: 0.2rem;
+    font-size: 24px;
+}
+
+.shoWme{
+    display: none;
+}
+
+.gerar-pdf:hover{
+    color: #2a7da2;
+    cursor: pointer;
+}
+
+
+
+
+/* Contact */
+.contact-info{
+    padding-top: 40px;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul{
+    position: relative;
+}
+
+.contact-info ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact-info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color:#03a9f4;
+}
+
+
+.contact-info ul li span{
+    color:#fff;
+    font-weight: 300;
+}
+
+
+
+/* Education */
+.contact-info.education li{
+    margin-bottom: 15px;
+}
+
+.contact-info.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.contact-info.education h4{
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* About */
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color:#003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #333;
+    line-height: 1.4;
+}
+
+.descricao{
+    text-align: justify;
+}
+
+.about .box{
+    display: grid;
+    grid-template-columns: 150px auto;
+    margin: 20px 0;
+}
+
+
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+
+.about .box .text h4{
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+/* Skills */
+.skills .box h4{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+}
+
+.text-exp li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+
+.skills ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.skills ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
